@@ -13,6 +13,33 @@
   <!-- Event snippet for Visualização de página conversion page -->
 <script>
   gtag('event', 'conversion', {
+      'send_to': 'AW-18477217779/kE_9CIrG84cdEPPvz-pE',
+      'value': 1.0,
+      'currency': 'BRL'
+  });
+</script>
+<!-- Event snippet for Visualização de página conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-18477217779/kE_9CIrG84cdEPPvz-pE',
+      'value': 1.0,
+      'currency': 'BRL',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
+  <!-- Event snippet for Visualização de página conversion page -->
+<script>
+  gtag('event', 'conversion', {
       'send_to': 'AW-18477180324/KYsWCMu_94cdEKTLzepE',
       'value': 1.0,
       'currency': 'BRL'
